@@ -1,0 +1,37 @@
+{
+  "name": "BlogPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Blog post title"
+    },
+    "content": {
+      "type": "string",
+      "description": "Blog post content in markdown"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "Short excerpt for preview"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Cover image URL"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for the post"
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}
